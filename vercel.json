@@ -1,15 +1,16 @@
 {
+  "version": 2,
   "builds": [
-    {
-      "src": "robots.txt",
-      "use": "@vercel/static"
-    },
     {
       "src": "html/**/*.html",
       "use": "@vercel/static"
     },
     {
       "src": "assets/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "robots.txt",
       "use": "@vercel/static"
     }
   ],
@@ -22,14 +23,25 @@
       "src": "/robots.txt",
       "dest": "/robots.txt"
     },
+
     {
       "src": "/privacy-policy(\\.html)?",
       "dest": "/html/privacy-policy.html"
     },
     {
+      "src": "/privacy.html",
+      "dest": "/html/privacy-policy.html"
+    },
+
+    {
       "src": "/terms-and-conditions(\\.html)?",
       "dest": "/html/terms-and-conditions.html"
     },
+    {
+      "src": "/terms.html",
+      "dest": "/html/terms-and-conditions.html"
+    },
+
     {
       "src": "/(.*)",
       "dest": "/html/index.html"
