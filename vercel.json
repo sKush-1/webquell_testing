@@ -5,7 +5,7 @@
       "use": "@vercel/static"
     },
     {
-      "src": "html/**/*",
+      "src": "html/**/*.html",
       "use": "@vercel/static"
     },
     {
@@ -24,17 +24,11 @@
     },
     {
       "src": "/privacy-policy",
-      "dest": "/html/privacy-policy.html",
-      "headers": {
-        "Content-Type": "text/html"
-      }
+      "dest": "/html/privacy-policy.html"
     },
     {
       "src": "/terms-and-conditions",
-      "dest": "/html/terms-and-conditions.html",
-      "headers": {
-        "Content-Type": "text/html"
-      }
+      "dest": "/html/terms-and-conditions.html"
     },
     {
       "src": "/(.*)",
