@@ -23,11 +23,11 @@
       "dest": "/robots.txt"
     },
     {
-      "src": "/privacy-policy",
+      "src": "/privacy-policy(\\.html)?",
       "dest": "/html/privacy-policy.html"
     },
     {
-      "src": "/terms-and-conditions",
+      "src": "/terms-and-conditions(\\.html)?",
       "dest": "/html/terms-and-conditions.html"
     },
     {
