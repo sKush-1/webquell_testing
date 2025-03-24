@@ -15,20 +15,26 @@
   ],
   "routes": [
     {
-      "src": "/privacy-policy",
-      "dest": "/html/privacy-policy.html"
-    },
-    {
-      "src": "/terms-and-conditions",
-      "dest": "/html/terms-and-conditions.html"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
     },
     {
       "src": "/robots.txt",
       "dest": "/robots.txt"
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "src": "/privacy-policy",
+      "dest": "/html/privacy-policy.html",
+      "headers": {
+        "Content-Type": "text/html"
+      }
+    },
+    {
+      "src": "/terms-and-conditions",
+      "dest": "/html/terms-and-conditions.html",
+      "headers": {
+        "Content-Type": "text/html"
+      }
     },
     {
       "src": "/(.*)",
